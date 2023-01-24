@@ -1,4 +1,3 @@
-
 $(document).ready(function()
 {
   const shirts_cost = 24.95;
@@ -932,7 +931,6 @@ $("#pants_plus").click(function()
    
    //location.reload();  
  });  
-    
   
 //cart.html/clear buttons/empty cart--------------------------------------------------------------------------------------
   
@@ -1224,7 +1222,6 @@ $("#empty_button").click(function()
     $("#bill_total").text(wardrobe_total.toLocaleString("en-US", {style: "currency", currency: "USD"}));
   }
   
-  
 //--------------------------------------------------------------------------------------  
   console.log("shirts: " + shirts_in_cart);
   console.log("pants: " + pants_in_cart);
@@ -1243,7 +1240,5 @@ $("#empty_button").click(function()
   console.log("total: " + wardrobe_total.toLocaleString("en-US", {style: "currency", currency: "USD"}));
   
 //--------------------------------------------------------------------------------------  
-
-  
 });
 
