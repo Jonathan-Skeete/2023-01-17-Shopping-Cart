@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
+  </head>
+  
+  <body>
+    <div id="navbar">
+      <a id="title" href="index.html">Wardrobe</a>
+      <div id="cart">
+        <a id="badge_link" href="cart.html">
+          <div id="icon">&#128722;</div>
+          <b class="hidden" id="badge"></b>
+        </a>
+      </div>
+    </div>
+  
+    <div id="main">
+    
+      <h1>Cart</h1>
+    
+      <div class="hidden" id="cart_empty">Your cart is empty.</div>
+        
+      <table id="cart_list">
+        <tr class="hidden" id="cart_shirts">
+          <td><img src="pictures/shirts.png"/>&nbsp;&nbsp;&nbsp;</td>
+          <td class="qty" id="shirts_x_qty"></td>
+          <td class="item_subtotal" id="shirts_subtotal"></td>
+          <td>&nbsp;&nbsp;&nbsp;<button class="minus" id="shirts_minus">&minus;</button></td>
+          <td>/</td>
+          <td><button class="plus" id="shirts_plus">&plus;</button>&nbsp;&nbsp;&nbsp;</td>
+          <td><button id="shirts_clear">Clear</button></td>
+        </tr>
+        <tr class="hidden" id="cart_pants">
+          <td><img src="pictures/pants.png"/>&nbsp;&nbsp;&nbsp;</td>
+          <td class="qty" id="pants_x_qty"></td>
+          <td class="item_subtotal" id="pants_subtotal"></td>
+          <td>&nbsp;&nbsp;&nbsp;<button class="minus" id="pants_minus">&minus;</button></td>
+          <td>/</td>
+          <td><button class="plus" id="pants_plus">&plus;</button>&nbsp;&nbsp;&nbsp;</td>
+          <td><button id="pants_clear">Clear</button></td>
+        </tr>
+        <tr class="hidden" id="cart_shoes">
+          <td><img src="pictures/shoes.png"/>&nbsp;&nbsp;&nbsp;</td>
+          <td class="qty" id="shoes_x_qty"></td>
+          <td class="item_subtotal" id="shoes_subtotal"></td>
+          <td>&nbsp;&nbsp;&nbsp;<button class="minus" id="shoes_minus">&minus;</button></td>
+          <td>/</td>
+          <td><button class="plus" id="shoes_plus">&plus;</button>&nbsp;&nbsp;&nbsp;</td>
+          <td><button id="shoes_clear">Clear</button></td>
+        </tr>
+        <tr class="hidden" id="cart_jackets">
+          <td><img src="pictures/jackets.png"/>&nbsp;&nbsp;&nbsp;</td>
+          <td class="qty" id="jackets_x_qty"></td>
+          <td class="item_subtotal" id="jackets_subtotal"></td>
+          <td>&nbsp;&nbsp;&nbsp;<button class="minus" id="jackets_minus">&minus;</button></td>
+          <td>/</td>
+          <td><button class="plus" id="jackets_plus">&plus;</button>&nbsp;&nbsp;&nbsp;</td>
+          <td><button id="jackets_clear">Clear</button></td>
+        </tr>
+        <tr class="hidden" id="cart_hats">
+          <td><img src="pictures/hats.png"/>&nbsp;&nbsp;&nbsp;</td>
+          <td class="qty" id="hats_x_qty"></td>
+          <td class="item_subtotal" id="hats_subtotal"></td>
+          <td>&nbsp;&nbsp;&nbsp;<button class="minus" id="hats_minus">&minus;</button></td>
+          <td>/</td>
+          <td><button class="plus" id="hats_plus">&plus;</button>&nbsp;&nbsp;&nbsp;</td>
+          <td><button id="hats_clear">Clear</button></td>
+        </tr>
+      </table>
+        
+      <div class="hidden" id="empty_cart">
+        <button id="empty_button">Empty Cart</button>
+      </div>
+    
+      <div class="hidden" id="bill">  
+        <div>
+          <hr/>
+          <table>
+            <tr>
+              <td class="column_1">Subtotal:</td>
+              <td class="column_2" id="bill_subtotal"></td>
+            </tr>
+            <tr>
+               <td class="column_1">Tax:</td> 
+               <td class="column_2" id="bill_tax"></td>
+            </tr>
+            <tr>
+              <td class="column_1">Total:</td>
+              <td class="column_2" id="bill_total"></td>
+            </tr>
+          </table>
+          <hr/>  
+        </div>  
+      </div>  
+      
+      <button id="continue_shopping"><a style="color:black" href="index.html">Continue Shopping</a></button>
+      
+      <a class="hidden" id="checkout_link" href="">
+        <button id="checkout">Checkout</button>
+      </a>
+  
+    </div>
+  
+    <br />
+  
+    <div id="footer">
+      <span>© 2023.&nbsp; All Rights Reserved.</span>
+      <span style="float: right; margin-right: 40px;">By Jonathan Skeete</span> 
+    </div>
+    
+    <script src="script.js"></script>
+     
+  </body>
+
+</html>

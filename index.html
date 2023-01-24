@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
+  </head>
+  
+  <body>
+    <div id="navbar">
+      <a id="title" href="index.html">Wardrobe</a>
+      <div id="cart">
+        <a id="badge_link" href="cart.html">
+          <div id="icon">&#128722;</div>
+          <b class="hidden" id="badge"></b>
+        </a>
+      </div>
+    </div>
+  
+    <div id="main">
+      <br/>
+    
+      <div class="item_display">
+        <tr>  
+        <div class="clothing_border" id="shirts_card">
+          <h3>Shirts</h3>
+          <img src="pictures/shirts.png"/>
+          <div class="cost">Cost: $24.95</div>
+        </div>  
+        <div class="clothing_border" id="pants_card">
+          <h3>Pants</h3>
+          <img src="pictures/pants.png"/>
+          <div class="cost">Cost: $44.95</div>
+        </div>
+        <div class="clothing_border" id="shoes_card"> 
+          <h3>Shoes</h3>
+          <img src="pictures/shoes.png"/>
+          <div class="cost">Cost: $94.95</div>
+        </div>
+        <div class="clothing_border" id="jackets_card">  
+          <h3>Jackets</h3>
+          <img src="pictures/jackets.png"/>
+          <div class="cost">Cost: $149.95</div>
+        </div>
+        <div class="clothing_border" id="hats_card">  
+          <h3>Hats</h3>
+          <img src="pictures/hats.png"/>
+          <div class="cost">Cost: $29.95</div>
+        </div>
+        </tr>
+      </div>  
+      
+      <br/><br/>
+    
+      <table class="precart">
+      <tr class="item">
+        <td>Shirts:</td>
+        <td><input placeholder="0" type="number" id="shirts_quantity" min="0" max="99"></td>
+        <td><button id="shirts_submit">Add to Cart</button></td>
+      </tr> 
+      <tr class="item">
+        <td>Pants:</td> 
+        <td><input placeholder="0" type="number" id="pants_quantity" min="0" max="99"></td>
+        <td><button id="pants_submit">Add to Cart</button></td>
+      </tr>
+      <tr class="item">
+        <td>Shoes:</td> 
+        <td><input placeholder="0" type="number" id="shoes_quantity" min="0" max="99"></td>
+        <td><button id="shoes_submit">Add to Cart</button></td>
+      </tr>
+      <tr class="item">
+        <td>Jackets:</td>
+        <td><input placeholder="0" type="number" id="jackets_quantity" min="0" max="99"></td>
+        <td><button id="jackets_submit">Add to Cart</button></td>
+      </tr>
+      <tr class="item">
+        <td>Hats:</td>
+        <td><input placeholder="0" type="number" id="hats_quantity" min="0" max="99"></td>
+        <td><button id="hats_submit">Add to Cart</button></td>
+      </tr>
+      </table> 
+    
+      <table class="precart">
+        <tr>
+          <td><button id="add_all">Add all to Cart</button></td>
+          <td><a href="cart.html"><button id="view_cart">View Cart</button></a></td>
+        </tr>
+      </table>
+    
+      <br />
+    </div>  
+    
+    <br />
+    
+    <div id="footer">
+      <span>© 2023.&nbsp; All Rights Reserved.</span>
+      <span style="float: right; margin-right: 40px;">By Jonathan Skeete</span> 
+    </div>
+  
+    <script src="script.js"></script>
+  
+  </body>
+
+</html>
